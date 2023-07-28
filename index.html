@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ポートフォリオ</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </head>
+
+<body id="body">
+    <header id="header">
+        <h1 class="logo">
+            <span class="logo-title">Suguru Kakizaki</span>
+            <span class="logo-desc">portfolio</span>
+        </h1>
+    <script src="js/main.js" defer></script>
+    <div id="wrapper">
+        <p class="btn-gnavi open">
+        <span></span>
+        <span></span>
+        <span></span>
+        </p>
+    <nav id="global-navi" style="right: 0px;">
+        <ul class="menu">
+            <li><a href="#profile">PROFILE</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#skills">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+    </div>
+</header>
+<main id="contents" style="margin-top: 0%;">
+    <section class="section fade-in-section" id="profile" style="padding-top: 31px;">
+    <div class="floating-bubble-background"></div>
+        <div>
+            <h2 class="effect profile_img">PROFILE
+                <div class="speech-bubble">
+                    <div class="bubble_in">
+                        <p class="name">
+                            <ruby>
+                            柿崎卓<rt>Suguru Kakizaki</rt>
+                            </ruby>
+                        <a href="https://twitter.com/your_twitter_handle" target="_blank">
+                            <img src="img/backimage/tw.png" alt="Twitter Icon"> 
+                        </a>
+                        </p>
+                    </div>
+                </div>
+            </h2>
+            <div class="sub_effect">
+            <p class="fade-in-section career">
+                <span class="sub_title">経歴</span>
+                <br>
+                ・1996年生まれ。秋田県出身
+                <br>
+                ・秋田県立増田高等学校 総合学科 理数系卒業（～2012.03）
+                <br>
+                ・秋田県立秋田技術専門学校 自動車整備科卒業（～2017.03）
+                <br>
+                ・秋田スズキ入社 スズキアリーナ横手店に務める（～2018.04）<span>自動車の整備や点検、リコール作業などを行った。</span>
+                <br>
+                ・JA全農北日本くみあい飼料株式会社入社 秋田横手農場に努める（～2023.03）<span>肉豚の成育（子豚を導入し出荷するまで）出荷、農場環境の整備、農場運営の補佐を行った</span>
+                <br>
+                ・インターネット・アカデミー<span>IoTエンジニア育成Bコース受講（2022.10～）</span>
+            </p>
+            <p class="fade-in-section career">
+                <span class="sub_title">趣味・好きな事</span>
+                <br>
+                イラスト ペットと遊ぶこと Youtube鑑賞
+                <br>
+                最近は家での自重トレーニングにハマっている
+            </p>
+            </div>
+        </div>
+        <div class="fish">
+            <div class="bubble"></div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="floating-bubble-background"></div>
+        <div class="section_title fade-in-section">
+            <h2 class="effect">WORKS</h2>
+        </div>
+        <section id="App" class="fade-in-section">
+            <h3>WEBAPP</h3>
+            <div class="app_container">
+                <div id="app1">
+                    <img class="site_img" src="img/backimage/かんたんSNS .png" alt="WEBアプリの表示イメージ">
+                    <img class="site_img" src="img/backimage/かんたんSNS-2.png" alt="WEBアプリの表示イメージ2">
+                </div>
+                <div class="app_detail">
+                        <p class="app_title">かんたんSNS <span>いいね機能やコメント機能、タグ検索機能などを備えた簡単なSNS風アプリ</span></p>
+                        <p class="period">
+                            <span class="sub_title">製作期間：約２ヶ月</span>
+                        </p>
+                        <p class="tools">
+                            <span class="sub_title">使用したツール・言語・開発環境</span>
+                            <br>
+                            Laravel10/HTML/CSS/PHP/GitHub/SendGrid/Heroku/MySQL/Docker/Linux/
+                        </p>
+                        <p class="detail_text">
+                            フルスタック開発の経験を詰むために、LaravelとDockerを使ってSNSアプリを構築しました。アプリケーションはUbuntu環境で開発され、コードのバージョン管理にはGitHubを利用しました。データベースとしてMySQLを採用し、アプリケーションのホスティングにはHerokuを使用しました。さらに、AWS S3を活用してアプリケーション内の画像保存を行っています。開発環境の構築とコードの編集には、VSCodeを主に使用しています。
+                        </p>
+                        <a href="https://github.com/skdx8119/perssimon-repo.git" class="git_btn">
+                            <img src="img/skill_icon/icons8-github-50.png" alt="GitHub Icon">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://laravel-snsapp.herokuapp.com/" class="btn">WEBアプリへ</a>
+                </div>
+            </div>
+            <div class="app_container">
+                <div id="app2">
+                    <img class="site_img" src="img/backimage/占いAPP1.png" alt="Vtuber相性診断アプリの表示イメージ">
+                    <img class="site_img" src="img/backimage/占いAPP2.png" alt="Vtuber相性診断アプリの表示イメージ">
+                </div>
+                <div class="app_detail">
+                    <p class="app_title">Vtuber相性診断 
+                        <span>ユーザーの誕生日と血液型を元に、オリジナルのロジックで相性診断を行うWEBアプリ</span>
+                    </p>
+                    <p class="period">
+                        <span class="sub_title">製作期間：約１週間</span>
+                    </p>
+                    <p class="tools">
+                        <span class="sub_title">使用したツール・言語・開発環境</span>
+                        <br>
+                        Laravel10/HTML/CSS/PHP/GitHub/Heroku/MySQL/Docker/Linux/
+                    </p>
+                    <p class="detail_text">
+                        ユーザーと相性の良い人物を診断するためのアプリケーションです。ユーザーはログインし、自身の誕生日と血液型を入力します。この情報は、私が開発したオリジナルのロジックに基づいて相性診断を行います。アプリケーションはLaravelとDockerを使用して構築し、コードのバージョン管理にはGitHubを使用しました。MySQLをデータベースとして使用し、Herokuでホスティングしています。VSCodeを主に使用して開発環境を構築し、コードの編集を行いました。
+                    </p>
+                    <a href="https://github.com/skdx8119/divination-repo.git" class="git_btn">
+                        <img src="img/skill_icon/icons8-github-50.png" alt="GitHub Icon">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://vtuber-compatibility-diagnosis-689c2f0ddc1e.herokuapp.com/" class="btn">WEBアプリへ</a>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+    
+
+    <section id="skills">
+        <div class="floating-bubble-background"></div>
+        <!-- スキル一覧 -->
+        <div class="section_title fade-in-section">
+            <h2 class="effect">SKILLS</h2>
+        </div>
+        <ul class="skills_wrapper">
+          <li>
+            <div class="bubble"></div>
+            <div class="skill_content">
+                <div class="skills_icon">
+                    <img src="img/skill_icon/kisspng-html-web-development-responsive-web-design-bootstr-5af71a42c55ca0.2298363615261435548084.png" alt="HTML/CSS">
+                </div>
+              <p>
+              <span>HTML/CSS</span>
+              レスポンシブなウェブサイトの設計と構築に対応。要素の配置やスタイリングを網羅。自己紹介サイトをゼロから構築。基本のHTMLとCSSの知識を持っています。
+              使用エディタ：Visual Studio Code
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="bubble"></div>
+            <div class="skill_content">
+                <div class="skills_icon">
+                    <img src="img/skill_icon/kisspng-php-server-side-scripting-computer-software-genera-php-5adc5e792550b8.3506828915243915451529.png" alt="PHP">
+                </div>
+                <p>
+                <span>PHP/Laravel</span>
+                Laravelを使用し、SNSアプリと占いアプリを作成。オブジェクト指向の開発とMVCモデルの理解に基づく独自のロジックを組み込み。基本のPHPの知識を持っています。
+                使用エディタ：Visual Studio Code
+                </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="bubble"></div>
+            <div class="skill_content">
+                <div class="skills_icon">
+                    <img src="img/skill_icon/kisspng-javascript-logo-html-clip-art-javascript-logo-5b5188b1a2a1f9.2428698915320700656662.png" alt="Javascript">
+                </div>
+            <p>
+              <span>JavaScript/jQuery</span>
+              自己紹介サイトでJavaScriptとjQueryを使用し、動的要素をウェブページに導入。基本的なJavaScriptの知識を持っています。
+              使用エディタ：Visual Studio Code
+            </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="bubble"></div>
+            <div class="skill_content">
+                <div class="skills_icon">
+                    <img src="img/skill_icon/kisspng-docker-github-node-js-mongodb-computer-software-5b0a34af9043f5.6228315115273955035909.png" alt="docker/ubutu/mysql/github">
+                </div>
+            <p>
+              <span>docker/ubutu/mysql/github</span>
+              DockerとUbuntuを使用し、一貫した開発環境を構築。MySQLでデータ管理を行い、GitHubを用いてバージョン管理とコード共有を実施。これらの技術は全ての開発プロジェクトに使用。
+              使用エディタ：Visual Studio Code
+            </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="bubble"></div>
+            <div class="skill_content">
+                <div class="skills_icon">
+                    <img src="img/skill_icon/kisspng-sendgrid-logo-management-chief-executive-business-5ae6bf9d0730c3.8179100115250717730295.png" alt="Amazon S3/Heroku/SendGrid">
+                </div>
+            <p>
+              <span>Amazon S3/Heroku/SendGrid</span>
+              Amazon S3を利用して安全な画像ストレージを提供し、Herokuでアプリケーションをデプロイ。SendGridを用いてユーザー登録時の確認メールの自動送信を実装。
+            </p>
+            </div>
+          </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+        <div class="fish2">
+            <div id="light"></div>
+        </div>
+        <div class="inner">
+            <h2 class="effect">CONTACT</h2>
+            <p class="text-lighten">ご質問や相談など、<br>お気軽にご連絡ください。</p>
+            <a href="sugurukakizaki119_0511@yahoo.co.jp" class="btn">お問い合わせ</a>
+            <p><a href="sugurukakizaki119_0511@yahoo.co.jp">sugurukakizaki119_0511@yahoo.co.jp</a>or<a href="https://twitter.com/your_twitter_handle" target="_blank">TWITTER DM</a></p>
+        </div>
+    </section>
+    
+    <a href="#" id="arrow" class="show">
+        <img src="img/backimage/arrow.png" alt="トップへ戻る">
+    </a><div id="scroll-bubble-background"></div>
+
+
+</main>
+
+    <footer id="footer">
+        <div>
+            <nav class="footer-link">
+                <ul>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright@Suguru Kakizaki. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
