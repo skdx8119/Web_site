@@ -4,8 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ポートフォリオ</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/tablet.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js" defer></script>
 
     </head>
 
@@ -15,13 +19,12 @@
             <span class="logo-title">Suguru Kakizaki</span>
             <span class="logo-desc">portfolio</span>
         </h1>
-    <script src="js/main.js" defer></script>
     <div id="wrapper">
-        <p class="btn-gnavi open">
+        <div class="btn-gnavi open">
         <span></span>
         <span></span>
         <span></span>
-        </p>
+        </div>
     <nav id="global-navi" style="right: 0px;">
         <ul class="menu">
             <li><a href="#profile">PROFILE</a></li>
@@ -46,7 +49,8 @@
         </svg>
     </div>
 </header>
-<main id="contents" style="margin-top: 0%;">
+<main id="contents">
+    <!-- プロフィール -->
     <section class="section fade-in-section" id="profile" style="padding-top: 31px;">
     <div class="floating-bubble-background"></div>
         <div>
@@ -57,8 +61,8 @@
                             <ruby>
                             柿崎卓<rt>Suguru Kakizaki</rt>
                             </ruby>
-                        <a href="https://twitter.com/your_twitter_handle" target="_blank">
-                            <img src="img/backimage/tw.png" alt="Twitter Icon"> 
+                        <a href="https://twitter.com/hattyan1198" target="_blank">
+                            <img src="img/skill_icon/tw.png" alt="Twitter Icon"> 
                         </a>
                         </p>
                     </div>
@@ -93,7 +97,7 @@
             <div class="bubble"></div>
         </div>
     </section>
-
+    <!-- 作品紹介 -->
     <section id="works">
         <div class="floating-bubble-background"></div>
         <div class="section_title fade-in-section">
@@ -103,8 +107,8 @@
             <h3>WEBAPP</h3>
             <div class="app_container">
                 <div id="app1">
-                    <img class="site_img" src="img/backimage/かんたんSNS .png" alt="WEBアプリの表示イメージ">
-                    <img class="site_img" src="img/backimage/かんたんSNS-2.png" alt="WEBアプリの表示イメージ2">
+                    <img class="site_img" src="img/backimage/SNSAPP.png" alt="WEBアプリの表示イメージ">
+                    <img class="site_img" src="img/backimage/SNSAPP-2.png" alt="WEBアプリの表示イメージ2">
                 </div>
                 <div class="app_detail">
                         <p class="app_title">かんたんSNS <span>いいね機能やコメント機能、タグ検索機能などを備えた簡単なSNS風アプリ</span></p>
@@ -128,8 +132,8 @@
             </div>
             <div class="app_container">
                 <div id="app2">
-                    <img class="site_img" src="img/backimage/占いAPP1.png" alt="Vtuber相性診断アプリの表示イメージ">
-                    <img class="site_img" src="img/backimage/占いAPP2.png" alt="Vtuber相性診断アプリの表示イメージ">
+                    <img class="site_img" src="img/backimage/DivinationAPP1.png" alt="Vtuber相性診断アプリの表示イメージ">
+                    <img class="site_img" src="img/backimage//DivinationAPP2.png" alt="Vtuber相性診断アプリの表示イメージ">
                 </div>
                 <div class="app_detail">
                     <p class="app_title">Vtuber相性診断 
@@ -157,7 +161,7 @@
         </section>
     </section>
     
-
+    <!-- スキル紹介 -->
     <section id="skills">
         <div class="floating-bubble-background"></div>
         <!-- スキル一覧 -->
@@ -235,7 +239,7 @@
           </li>
       </ul>
     </section>
-
+    <!-- お問い合わせ -->
     <section id="contact">
         <div class="fish2">
             <div id="light"></div>
@@ -247,14 +251,12 @@
             <p><a href="sugurukakizaki119_0511@yahoo.co.jp">sugurukakizaki119_0511@yahoo.co.jp</a>or<a href="https://twitter.com/your_twitter_handle" target="_blank">TWITTER DM</a></p>
         </div>
     </section>
-    
+    <!-- 上昇用矢印ボタン -->
     <a href="#" id="arrow" class="show">
         <img src="img/backimage/arrow.png" alt="トップへ戻る">
     </a><div id="scroll-bubble-background"></div>
-
-
 </main>
-
+    <!-- フッター -->
     <footer id="footer">
         <div>
             <nav class="footer-link">

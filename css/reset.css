@@ -1,0 +1,17 @@
+@charset "utf-8";
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body, body::before {
+    margin: 0; 
+    padding: 0;
+}
+a, a:hover, a:hover img {
+    text-decoration: none;
+}
+img, video, object {
+    border: none;
+}
+ul, li {
+    list-style: none;
+}

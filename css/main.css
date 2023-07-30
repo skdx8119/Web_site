@@ -1,13 +1,4 @@
-/* CSS Document */
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
+/* 全体設定とリセットスタイル */
 body, body::before {
   font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #000000;
@@ -18,18 +9,14 @@ body, body::before {
   transition: background-color 1s ease;
   background-color: #a4d7f7;
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  margin: 0; 
-  padding: 0;
   height: auto;
   flex-direction: column;
   min-height: 100vh;
   display: flex;
 }
 
-
 a, a:hover, a:hover img {
   color: #fff;
-  text-decoration: none;
   opacity: .8;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -41,15 +28,9 @@ a, a:hover, a:hover img {
 img, video, object {
   max-width: 100%;
   height: auto;
-  border: none;
   vertical-align: bottom;
   display: block;
 }
-
-ul, li {
-  list-style: none;
-}
-
 
 /* ヘッダー*/
 #header {
@@ -66,20 +47,35 @@ ul, li {
   align-items: center;
   text-align: center;
   height: 800px;
-  background-image: url(../img/header/crop17kissaten22812A.jpg);
+  background-image: url('../img/header/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+#header .logo-title {
+  font-size: 94px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -2px;
+  display: block;
+}
+#header .logo-desc {
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
 .waves {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /* Fix for safari gap */
+  margin-bottom: -7px; 
   min-height: 100px;
   max-height: 150px;
-  z-index: -1; /* add this line to send the waves behind other elements */
+  z-index: -1; 
 }
 
 .parallax > use {
@@ -115,38 +111,6 @@ ul, li {
   }
 }
 
-/* Shrinking for mobile */
-@media (max-width: 768px) {
-  .waves {
-      height: 40px;
-      min-height: 40px;
-  }
-  .content {
-      height: 30vh;
-  }
-  h1 {
-      font-size: 24px;
-  }
-}
-
-
-
-
-
-#header .logo-title {
-  font-size: 94px;
-  color: #fff;
-  line-height: 1;
-  letter-spacing: -2px;
-  display: block;
-}
-
-#header .logo-desc {
-  color: #fff;
-  line-height: 1;
-  letter-spacing: -2px;
-}
-
 /*ヘッダーメニュー*/
 #global-navi {
   background:#88d0e6;
@@ -165,98 +129,11 @@ padding:  30px 20px 25px 28px;
 color: #ffffff
 }
 
-@media screen and (max-width: 600px) {
-#wrapper nav {
-  position: fixed;
-  top: 0;
-  right: -300px;
-  width: 300px;
-  height: 100%;
-  padding-top: 50px;
-  background:#88d0e6;
-  font-size: 16px;
-  box-sizing: border-box;
-  z-index: 2
-}
-#wrapper nav ul li {
-  display:block;
-  padding: 20px 28px
-}
 
-#wrapper nav ul li a {
-  text-decoration: none;
-  color: #ffffff
-}
-
-#wrapper .btn-gnavi {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 24px;
-  z-index: 3;
-  box-sizing: border-box;
-  cursor: pointer;
-  -webkit-transition: all 400ms;
-  transition: all 400ms
-}
-
-#wrapper .btn-gnavi span {
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: #666;
-  border-radius: 10px;
-  -webkit-transition: all 400ms;
-  transition: all 400ms
-}
-
-#wrapper .btn-gnavi span:nth-child(1) {
-  top: 0
-}
-
-#wrapper .btn-gnavi span:nth-child(2) {
-  top: 10px
-}
-
-#wrapper .btn-gnavi span:nth-child(3) {
-  top: 20px
-}
-
-#wrapper .btn-gnavi.open {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg)
-}
-
-#wrapper .btn-gnavi.open span {
-  background: #fff
-}
-
-#wrapper .btn-gnavi.open span {
-  width: 24px;
-}
-#wrapper .contents section p {
-  position: absolute;
-  top: 50%;
-  width: 30%;
-  line-height: 1.4;
-  font-size: 20px;
-  color: #fff;
-  text-shadow: 0 0 6px #666
-}
-
-#wrapper .contents section:nth-child(odd) p {
-  left: 10%
-}
-
-#wrapper .contents section:nth-child(even) p {
-  right: 10%
-}
-}
 /* main */
 main {
   transition: opacity 2s;
-  cursor: url('../img/cursor/1099790.png'), auto;
+  cursor: url('../img/cursor/diver.png'), auto;
   flex-grow: 1;
   overflow: hidden;
   display: flex;
@@ -330,13 +207,13 @@ section {
 }
 
 
-/* Hide element by default */
+/* デフォルトで要素を隠す */
 .fade-in-section {
   opacity: 0;
   transition: opacity 1.2s, transform 1.2s;
 }
 
-/* Show element when it becomes visible */
+/* 要素が見えるようになったら表示する */
 .fade-in-section.is-visible {
   opacity: 1;
 }
@@ -348,6 +225,7 @@ section {
   padding: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 #profile h2 {
@@ -377,20 +255,21 @@ section {
 }
 
 .profile_img {
-  background-image: url(../img/backimage/24020379.png);
+  background-image: url('../img/backimage/prof_fish.png');
   background-position: center; /* 画像をセンターに配置 */
   background-repeat: no-repeat; /* 画像を繰り返さない */
   background-size: 267px;
   padding: 74px;
   position: relative; /* h2に相対位置を指定 */
 }
+
 .speech-bubble {
   position: absolute;
-  top: 1%;
-  left: 18%;
-  background: url('../img/backimage/23427481.png');
+  top: 2%;
+  left: 28%;
+  background: url('../img/backimage/speach_bubble.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding: 10px;
   display: inline-block;
   width: 20%;
@@ -399,7 +278,7 @@ section {
 
 .speech-bubble p {
   margin: auto;
-  padding-left: 18%;
+  padding-left: 10%;
 }
 
 .speech-bubble a {
@@ -414,18 +293,13 @@ section {
 }
 
 ruby {
-  font-size: 1em; /* Adjust as necessary */
+  font-size: 1em;
 }
 
 rt {
-  font-size: 0.5em; /* Adjust as necessary */
-  color: #666; /* Adjust as necessary */
+  font-size: 0.5em;
+  color: #666;
 }
-
-
-
-
-
 
 .effect {
   transform: translate(0,0) !important;
@@ -433,11 +307,11 @@ rt {
 }
 
 .fish {
-  background-image: url('../img/backimage/23978668.png');
+  background-image: url('../img/backimage/bule_fish.png');
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30%; /* Adjust as needed */
-  height: 30%; /* Adjust as needed */
+  width: 30%;
+  height: 30%;
   position: absolute;
   right: 0;
   bottom: 10;
@@ -449,12 +323,9 @@ rt {
       right: 0;
   }
   50%, 100% {
-      right: 10%; /* Adjust as needed */
+      right: 10%;
   }
 }
-
-
-
 
 @keyframes fadein {
   from {
@@ -468,16 +339,16 @@ rt {
 }
 
 .bubble {
-  background-image: url('../img/backimage/23847575\ のコピー.png'); /* あなたの泡の画像のURLをここに入れてください */
+  background-image: url('../img/backimage/bless_bubble.png');
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%; /* Adjust as needed */
-  height: 100%; /* Adjust as needed */
+  width: 100%;
+  height: 100%;
   position: absolute;
   bottom: 70%;
   left: -11%;
   animation: bubble 3s linear infinite; /* このアニメーションは泡が上昇し、消える動きを作ります */
-  opacity: 0; /* 初めは見えない状態 */
+  opacity: 0;
 }
 
 @keyframes bubble {
@@ -493,7 +364,7 @@ rt {
 
 
 
-
+/* 作品紹介 */
 #works{
   width: 100%;
   padding:20% 0 0;
@@ -502,7 +373,7 @@ rt {
 
 #works .section_title{
   text-align: center;
-  background-image: url('../img/backimage/079986.png');
+  background-image: url('../img/backimage/work_crab.png');
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: 267px;
@@ -515,7 +386,7 @@ rt {
 }
 
 #App {    
-  background-image: url('../img/backimage/shape_s_left.png');
+  background-image: url('../img/backimage/wave_left.png');
   background-size: inherit;
   background-repeat: no-repeat;
   position: relative;
@@ -549,86 +420,95 @@ rt {
   align-items: center;
 }
 
+#App .app_container:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#app2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h3{
   color: #fff;
   font-size: 4vw;
   letter-spacing: 0.2em;
-  }
+}
 
-/* ... other styles remain the same ... */
+.app_title span{
+  display: block;
+  margin-top: 3%; 
+  font-size: 1vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+/*制作期間・ツール*/
+.period, .tools{
+  margin-top: 12%;
+  margin-left: 30px;
+  font-size: 1.2vw;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+}
+.sub_title{
+  font-size: 1.4vw;
+  font-weight: bold;
+  position: relative;
+}
 
-  .app_title span{
-      display: block;
-      margin-top: 3%; 
-      font-size: 1vw;
-      font-weight: normal;
-      letter-spacing: normal;
-      }
-  /*制作期間・ツール*/
-  .period, .tools{
-      margin-top: 12%;
-      margin-left: 30px;
-      font-size: 1.2vw;
-      line-height: 2.5;
-      letter-spacing: 0.1em;
-      }
-  .sub_title{
-      font-size: 1.4vw;
-      font-weight: bold;
-      position: relative;
-      }
+/*ひし形リスト*/
+.sub_title::before{
+  content: "◆";
+  font-size: 1vw;
+  color:#3e50f7; 
+  position: absolute;
+  left: -16px;
+}
+/*説明文*/
+.detail_text{
+  margin-top: 12%;
+  font-size: 1vw;
+  letter-spacing: normal;
+  line-height: 3;
+}
 
-  /*ひし形装飾*/
-  .sub_title::before{
-      content: "◆";
-      font-size: 1vw;
-      color:#3e50f7; 
-      position: absolute;
-      left: -16px;
-      }
-  /*説明文*/
-  .detail_text{
-      margin-top: 12%;
-      font-size: 1vw;
-      letter-spacing: normal;
-      line-height: 3;
-      }
-
-      /*セクション共通設定*/
+/*セクション共通設定*/
 .inner{
   width: 100%;
   padding:0 12%;    
   box-sizing: border-box;
   margin: 0 auto;
-  }
+}
 
-  /*ボタン*/
-  .site_container>:nth-child(2) .btn{
-      margin-left: calc(100% - 19vw);
-      }
+/*ボタン*/
+.site_container>:nth-child(2) .btn{
+  margin-left: calc(100% - 19vw);
+}
 
-  .btn{
-    color: #fff;
-    font-size: 1.2vw;
-    letter-spacing: 0.2em;
-    line-height: 4;
-    text-align: center;
-    display:block;
-    width: 19vw;
-    margin-top: 10%;
-    background:-moz-linear-gradient(to right, #add8e6 30%, #00008b);
-    background:-webkit-linear-gradient(to right, #add8e6 30%, #00008b);
-    background:linear-gradient(to right, #add8e6 30%, #00008b);
-    box-shadow:2px 2px 5px  rgba(124,124,124,0.5);
-    transition: color 0.6s ease, background 1s ease-in-out;
+.btn{
+  color: #fff;
+  font-size: 1.2vw;
+  letter-spacing: 0.2em;
+  line-height: 4;
+  text-align: center;
+  display:block;
+  width: 19vw;
+  margin-top: 10%;
+  background:-moz-linear-gradient(to right, #add8e6 30%, #00008b);
+  background:-webkit-linear-gradient(to right, #add8e6 30%, #00008b);
+  background:linear-gradient(to right, #add8e6 30%, #00008b);
+  box-shadow:2px 2px 5px  rgba(124,124,124,0.5);
+  transition: color 0.6s ease, background 1s ease-in-out;
 }
 
 .btn:hover{
-    color:#37415a;
-    background:-moz-linear-gradient(to left, #00008b, #add8e6 30%);
-    background:-webkit-linear-gradient(to left, #00008b, #add8e6 30%);
-    background:linear-gradient(to left, #00008b, #add8e6 30%);
-    opacity: 0.9;
+  color:#37415a;
+  background:-moz-linear-gradient(to left, #00008b, #add8e6 30%);
+  background:-webkit-linear-gradient(to left, #00008b, #add8e6 30%);
+  background:linear-gradient(to left, #00008b, #add8e6 30%);
+  opacity: 0.9;
 }
 
 .github-btn {
@@ -648,37 +528,24 @@ h3{
   margin-right: 5px;
 }
 
-
-#App .app_container:nth-child(2) {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-#app2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
 /*スキル*/
 #skills{
   width: 100%;
   padding:20% 0 0;
   margin-bottom: 20%;
-  background-image: url(../img/backimage/shape_storne.png), url(../img/backimage/shape_right.png);
+  background-image: url('../img/backimage/storne_left.png'), url('../img/backimage/storne_right.png');
   background-position: 0 center, 100% center;
   background-repeat: no-repeat, no-repeat;
   background-size: 50% 100%, 50% 100%;
   position: relative;
-  margin: 0 -5%; /* ネガティブマージンを設定 */
-  padding: 0;     /* パディングを削除 */
-  width: 106%;    /* 元の100%に加えて、左右のマージン分（各5%）を追加 */
-  }
+  margin: 0 -5%;
+  padding: 0;
+  width: 106%;
+}
 
 #skills .section_title{
   text-align: center;
-  background-image: url(../img/backimage/589590.png);
+  background-image: url('../img/backimage/skill_submarine.png');
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: 267px;
@@ -691,6 +558,7 @@ h3{
   font-family: 'Comic Sans MS', cursive, sans-serif;
   color: #fff;
 }
+
 .skills_wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -709,68 +577,73 @@ h3{
 
 .skills_wrapper li:nth-child(1), .skills_wrapper li:nth-child(3) ,.skills_wrapper li:nth-child(5){
   transition: 1.5s 0.5s;
-    transform: translateX(-50px);
-    opacity: 0;
-    background-image: url(../img/backimage/1609937_2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: left;
-    align-self: flex-start;
-    margin-right: 60%;
-    background-position: right;
+  transform: translateX(-50px);
+  opacity: 0;
+  background-image: url('../img/backimage/eel_left.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  align-self: flex-start;
+  margin-right: 60%;
+  background-position: right;
 }
 
 .skills_wrapper li:nth-child(2), .skills_wrapper li:nth-child(4) {
-    transition: 1.5s 0.5s;
-    transform: translateX(50px);
-    opacity: 0;
-    background-image: url(../img/backimage/1609937_1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-self: flex-end;
-    margin-left: 60%;
-    background-position: left;
+  transition: 1.5s 0.5s;
+  transform: translateX(50px);
+  opacity: 0;
+  background-image: url('../img/backimage/eel_right.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: flex-end;
+  margin-left: 60%;
+  background-position: left;
 }
 
 
-  .skills_icon{
-      width: 18%;
-      background-color:#fff;
-      border-radius: 40px;
-  }
-  .skills_wrapper li:nth-child(even) .skills_icon{
-    text-align: right;
-  }
-  .skills_wrapper li:nth-child(even) .skills_icon img {
-    margin-left: auto; /* 左側に自動マージンを追加 */
-  }
-  
-  .skills_wrapper p{
-      padding-left: 10%;
-      box-sizing: border-box;
-      font-size: 1.1vw;
-      line-height: 2.5;
-      font-family: 'Comic Sans MS', cursive, sans-serif; /* 明るい、カジュアルなフォント */
-  }
-  
-  .skills_wrapper p span{
-      display: block;
-      margin-bottom: 3%;
-      font-size: 18px;
-      line-height: 1;
-  }
-  .skills_wrapper li p {
-    background-color: transparent;
-    transition: background-color 2s ease-in-out;
-    font-size: 12px;
-    color: #fff;
-    background-color: #666;
-    border-radius: 70px;
+.skills_icon{
+  width: 18%;
+  background-color:#fff;
+  border-radius: 40px;
 }
+
+.skills_wrapper li:nth-child(even) .skills_icon{
+  text-align: right;
+}
+
+.skills_wrapper li:nth-child(even) .skills_icon img {
+  margin-left: auto;
+}
+
+.skills_wrapper p{
+  padding-left: 10%;
+  box-sizing: border-box;
+  font-size: 1.1vw;
+  line-height: 2.5;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.skills_wrapper p span{
+  display: block;
+  margin-bottom: 3%;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.skills_wrapper li p {
+  background-color: transparent;
+  transition: background-color 2s ease-in-out;
+  font-size: 12px;
+  color: #fff;
+  background-color: #666;
+  border-radius: 70px;
+}
+
 .skills_wrapper li p,
 .skills_wrapper .skills_icon {
     transition: background-color 2s ease-in-out;
 }
+
 .skills_wrapper li .skill_content {
   display: flex;
   flex-direction: row;
@@ -786,11 +659,117 @@ h3{
 }
 
 .skills_wrapper li:nth-child(odd) .bubble {
-  /* スキル欄の泡にだけ適用するスタイルをここに書く */
   bottom: 70%;
   left: 100%;
 }
 
+/*お問い合わせ*/
+#contact{
+  width: 106%;
+  margin-top: 21%;
+  background: url("../img/backimage/seabed.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#contact .effect{
+  position: absolute;
+  top: -30%;
+  left: 46%;
+  background-image: url('../img/backimage/contact_signboard.png');
+  background-size: cover;
+  padding: 5%;
+}
+
+#contact>div p{
+  text-align: center;
+  font-size: 1.5vw;
+  letter-spacing: 0.2em;
+}
+#contact>div p:nth-child(2){
+  padding-top: 10%; 
+}
+#contact>div p:nth-child(4){
+  padding-bottom: 10%; 
+}
+#contact>div .btn{
+  width: 40%;
+  height: 7vw;
+  font-size: 1.5vw;
+  line-height: 4.5;
+  margin: 7% auto;
+}
+#contact>div p a:nth-child(1){
+  margin-right: 2%;     
+}
+#contact>div p a:nth-child(2){
+  margin-left: 2%;     
+}
+#contact>div p a:hover{
+  opacity: 0.7;    
+}
+
+.fish2 {
+  background-image: url('../img/backimage/anglerfish.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 10;
+  animation: swim 5s linear forwards;
+}
+
+#light{
+  position: absolute;
+  top: 15%; /* 光源の開始位置を調整 */
+  right: 79%; /* 光源の開始位置を調整 */
+  background-color: rgba(246, 255, 198, 0.973); /* 光の色と透明度を調整 */
+  border-radius: 50%; /* 光を円形に */
+  width: 0;
+  height: 0;
+  animation: glow 5s infinite; /* 光源のアニメーション */
+  z-index: -1;
+  /* シャドウを複数適用して輪を作る */
+  box-shadow:
+  0 0 10px 5px rgba(255, 255, 255, 0.3), /* 内側の輪 */
+  0 0 20px 10px rgba(255, 255, 255, 0.2), /* 中間の輪 */
+  0 0 30px 15px rgba(255, 255, 255, 0.1); /* 外側の輪 */
+}
+
+@keyframes glow {
+  0% {
+      width: 0;
+      height: 0;
+    }
+  50% {
+      width: 200px; /* 光が最大に広がる大きさを調整 */
+      height: 200px; /* 光が最大に広がる大きさを調整 */
+    }
+  100% {
+      width: 0;
+      height: 0;
+    }
+}
+
+.text-lighten {
+    animation: text-glow 5s infinite;
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* ここで色とブラーの半径を調整 */
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* スクロールボタン */
 #arrow {
   display: block;
   width: 2%;
@@ -803,122 +782,18 @@ h3{
 }
 
 .show {
-    visibility: visible!important;
-    opacity: 1!important;
+  visibility: visible!important;
+  opacity: 1!important;
 }
 
-/*お問い合わせ*/
-#contact{
-  width: 100%;
-  margin-top: 21%;
-  background: url("../img/backimage/1454171.png") no-repeat;
-  background-size: cover;
-  position: relative;
-  }
-#contact .effect{
-  position: absolute;
-  top: -30%;
-  left: 46%;
-  background-image: url(../img/backimage/1436906.png);
-  background-size: cover;
-  padding: 5%;
-  }
-#contact>div p{
-  text-align: center;
-  font-size: 1.5vw;
-  letter-spacing: 0.2em;
-  }
-#contact>div p:nth-child(2){
-  padding-top: 10%; 
-  }
-#contact>div p:nth-child(4){
-  padding-bottom: 10%; 
-  }
-#contact>div .btn{
-  width: 40%;
-  height: 7vw;
-  font-size: 1.5vw;
-  line-height: 4.5;
-  margin: 7% auto;
-  }
-#contact>div p a:nth-child(1){
-  margin-right: 2%;     
-  }
-#contact>div p a:nth-child(2){
-  margin-left: 2%;     
-  }
-#contact>div p a:hover{
-  opacity: 0.7;    
-  }
-
-  .fish2 {
-    background-image: url('../img/backimage/700122.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 30%; /* Adjust as needed */
-    height: 30%; /* Adjust as needed */
-    position: absolute;
-    right: 0;
-    bottom: 10;
-    animation: swim 5s linear forwards;
-  }
-
-  #light{
-    position: absolute;
-    top: 15%; /* 光源の開始位置を調整 */
-    right: 79%; /* 光源の開始位置を調整 */
-    background-color: rgba(246, 255, 198, 0.973); /* 光の色と透明度を調整 */
-    border-radius: 50%; /* 光を円形に */
-    width: 0;
-    height: 0;
-    animation: glow 5s infinite; /* 光源のアニメーション */
-    z-index: -1;
-    /* シャドウを複数適用して輪を作る */
-    box-shadow:
-    0 0 10px 5px rgba(255, 255, 255, 0.3), /* 内側の輪 */
-    0 0 20px 10px rgba(255, 255, 255, 0.2), /* 中間の輪 */
-    0 0 30px 15px rgba(255, 255, 255, 0.1); /* 外側の輪 */
+@keyframes jump {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
 }
-  
-  @keyframes glow {
-    0% {
-      width: 0;
-      height: 0;
-    }
-    50% {
-      width: 200px; /* 光が最大に広がる大きさを調整 */
-      height: 200px; /* 光が最大に広がる大きさを調整 */
-    }
-    100% {
-      width: 0;
-      height: 0;
-    }
-  }
-  
-  .text-lighten {
-    animation: text-glow 5s infinite; /* テキストのアニメーション */
-  }
-  
-  @keyframes text-glow {
-    0% {
-      text-shadow: none;
-    }
-    50% {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* ここで色とブラーの半径を調整 */
-    }
-    100% {
-      text-shadow: none;
-    }
-  }
-  
-  @keyframes jump {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-  }
-  
-  .main.jump {
-    animation: jump 1s ease-out;
-  }
+
+.main.jump {
+  animation: jump 1s ease-out;
+}
 
 #scroll-bubble-background {
   position: fixed;
