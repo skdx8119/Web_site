@@ -31,7 +31,6 @@ img, video, object {
   vertical-align: bottom;
   display: block;
 }
-
 /* ヘッダー*/
 #header {
   position: relative;
@@ -255,12 +254,12 @@ section {
 }
 
 .profile_img {
-  background-image: url('../img/backimage/prof_fish.png');
-  background-position: center; /* 画像をセンターに配置 */
-  background-repeat: no-repeat; /* 画像を繰り返さない */
-  background-size: 267px;
+  background-image: url(../img/backimage/prof_fish.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18%;
   padding: 74px;
-  position: relative; /* h2に相対位置を指定 */
+  position: relative;
 }
 
 .speech-bubble {
