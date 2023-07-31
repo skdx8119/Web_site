@@ -179,4 +179,8 @@
   background-position: center;
   background-size: 120%;
 }
+#light {
+  top: 30%;
+  right: 75%;
+}
 }
