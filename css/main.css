@@ -419,10 +419,6 @@ rt {
   align-items: center;
 }
 
-#App .app_container:nth-child(2) {
-  display: flex;
-  flex-direction: row-reverse;
-}
 
 #app2 {
   display: flex;

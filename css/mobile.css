@@ -136,16 +136,47 @@
   flex-direction: column; /* 縦並びにする */
 }
 
-.app_item {
-  display: flex;
-  flex-direction: column; /* 縦並びにする */
-}
-
-.app_item div[id^='app'], .app_detail {
+#app1, #app2, .app_detail {
   width: 100%; /* 横幅一杯にする */
 }
+/* スキル紹介 */
+#skills {
+  width: 136%;
+}
+.skills_wrapper li:nth-child(1), .skills_wrapper li:nth-child(3), .skills_wrapper li:nth-child(5) {
+  margin-right: 10%;
+}
+.skills_wrapper li:nth-child(2), .skills_wrapper li:nth-child(4) {
+  margin-left: 10%;
+}
 
-.app_detail {
-  text-align: left; /* 左揃えにする */
+.skills_wrapper li {
+  width: 100%; /* 全幅に広がるように設定 */
+  margin-right: 0; /* 右マージンを0に設定 */
+  margin-left: 0; /* 左マージンを0に設定 */
+  background-position: center; /* 背景画像を中央に配置 */
+  text-align: center; /* テキストを中央寄せにする */
+}
+
+.skill_content {
+  padding-top: 150px; /* 画像の高さに応じて調整 */
+}
+/* お問い合わせ */
+#contact {
+  width: 135%;
+  margin-top: 60%;
+}
+#contact>div .btn {
+  width: 40%;
+  height: 12vw;
+  margin: 20% auto;
+}
+#contact .effect {
+  position: absolute;
+  top: -50%;
+  left: 25%;
+  padding-bottom: 20%;
+  background-position: center;
+  background-size: 120%;
 }
 }

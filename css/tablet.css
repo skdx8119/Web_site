@@ -122,6 +122,10 @@
 #App {
   left: -10%;
 }
+#App .app_container:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
 /* スキル */
 #skills {
   width: 100%;
