@@ -128,7 +128,7 @@
   background-size: 230px;
   padding: 77px;
 }
-#App {
+#App, #Site {
   background-size: contain;
   left: -20%;
 }
@@ -136,7 +136,7 @@
   flex-direction: column; /* 縦並びにする */
 }
 
-#app1, #app2, .app_detail {
+#app1, #app2, #site1, .app_detail {
   width: 100%; /* 横幅一杯にする */
 }
 /* スキル紹介 */

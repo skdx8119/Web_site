@@ -18,31 +18,20 @@ body, body::before {
 a, a:hover, a:hover img {
   color: #fff;
   opacity: .8;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
   transition: all .3s;
 }
 
 img, video, object {
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
   display: block;
 }
 /* ヘッダー*/
 #header {
   position: relative;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
   align-items: center;
   text-align: center;
   height: 800px;
@@ -50,6 +39,7 @@ img, video, object {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 
 #header .logo-title {
@@ -313,7 +303,6 @@ rt {
   height: 30%;
   position: absolute;
   right: 0;
-  bottom: 10;
   animation: swim 5s linear forwards;
 }
 
@@ -384,7 +373,7 @@ rt {
   padding-left: 2px;
 }
 
-#App {    
+#App, #Site {    
   background-image: url('../img/backimage/wave_left.png');
   background-size: inherit;
   background-repeat: no-repeat;
@@ -397,6 +386,11 @@ rt {
 }
 
 #App .app_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Site .app_container {
   display: flex;
   justify-content: space-between;
 }
@@ -421,6 +415,12 @@ rt {
 
 
 #app2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#site1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -491,8 +491,6 @@ h3{
   display:block;
   width: 19vw;
   margin-top: 10%;
-  background:-moz-linear-gradient(to right, #add8e6 30%, #00008b);
-  background:-webkit-linear-gradient(to right, #add8e6 30%, #00008b);
   background:linear-gradient(to right, #add8e6 30%, #00008b);
   box-shadow:2px 2px 5px  rgba(124,124,124,0.5);
   transition: color 0.6s ease, background 1s ease-in-out;
@@ -500,11 +498,11 @@ h3{
 
 .btn:hover{
   color:#37415a;
-  background:-moz-linear-gradient(to left, #00008b, #add8e6 30%);
-  background:-webkit-linear-gradient(to left, #00008b, #add8e6 30%);
   background:linear-gradient(to left, #00008b, #add8e6 30%);
   opacity: 0.9;
 }
+
+
 
 .github-btn {
   display: inline-flex;
@@ -712,7 +710,6 @@ h3{
   height: 30%;
   position: absolute;
   right: 0;
-  bottom: 10;
   animation: swim 5s linear forwards;
 }
 
@@ -815,15 +812,11 @@ h3{
 
 #footer .footer-link ul{
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
   justify-content: center;
 }
+
 
 #footer .footer-link li {
   font-size: 12px;
