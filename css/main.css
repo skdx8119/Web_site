@@ -184,7 +184,7 @@ section {
 }
 
 
-.effect{
+.main_title{
   transform: translate(0,0)!important;
     opacity: 1!important;
     font-size: 30px;
@@ -244,7 +244,7 @@ section {
 }
 
 .profile_img {
-  background-image: url(../img/backimage/prof_fish.png);
+  background-image: url('../img/title/prof_fish.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18%;
@@ -290,7 +290,7 @@ rt {
   color: #666;
 }
 
-.effect {
+.main_title {
   transform: translate(0,0) !important;
   opacity: 1 !important;
 }
@@ -361,7 +361,7 @@ rt {
 
 #works .section_title{
   text-align: center;
-  background-image: url('../img/backimage/work_crab.png');
+  background-image: url('../img/title/work_crab.png');
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: 267px;
@@ -538,7 +538,7 @@ h3{
 
 #skills .section_title{
   text-align: center;
-  background-image: url('../img/backimage/skill_submarine.png');
+  background-image: url('../img/title/skill_submarine.png');
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: 267px;
@@ -665,11 +665,11 @@ h3{
   position: relative;
 }
 
-#contact .effect{
+#contact .main_title{
   position: absolute;
   top: -30%;
   left: 46%;
-  background-image: url('../img/backimage/contact_signboard.png');
+  background-image: url('../img/title/contact_signboard.png');
   background-size: cover;
   padding: 5%;
 }

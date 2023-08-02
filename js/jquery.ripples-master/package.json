@@ -1,7 +1,7 @@
 {
   "name": "jquery.ripples",
   "version": "0.6.3",
-  "description": "Add a water ripple effect to background images using WebGL.",
+  "description": "Add a water ripple main_title to background images using WebGL.",
   "keywords": [
     "jquery",
     "jquery-plugin",
@@ -9,7 +9,7 @@
     "ripples",
     "WebGL",
     "background",
-    "effect"
+    "main_title"
   ],
   "scripts": {
     "build": "rollup -c build/rollup.config.js",

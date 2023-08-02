@@ -128,16 +128,6 @@
 }
 /* スキル */
 #skills {
-  width: 100%;
-  padding: 20% 0 0;
-  margin-bottom: 20%;
-  background-image: url('../img/backimage/storne_left.png), url(../img/backimage/storne_right.png');
-  background-position: 0 center, 100% center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 50% 100%, 50% 100%;
-  position: relative;
-  margin: 0 -5%;
-  padding: 0;
   width: 115%;
 }
 
@@ -149,7 +139,7 @@
   margin-left: 25%;
 }
 /* お問い合わせ */
-#contact .effect {
+#contact .main_title {
   top: -40%;
   left: 33%;
 }
