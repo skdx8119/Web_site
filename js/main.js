@@ -60,7 +60,7 @@ let startBackgroundColor = [164, 215, 247];
 let endBackgroundColor = [0, 0, 128];
 
 window.addEventListener("scroll", function() {
-  let scroll = window.pageYOffset;
+  let scroll = window.scrollY;
   let scrollFraction = scroll / document.body.scrollHeight;
 
   let interpolatedBackgroundColor = interpolateColor(startBackgroundColor, endBackgroundColor, scrollFraction);
