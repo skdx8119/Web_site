@@ -684,14 +684,15 @@ h3{
   position: relative;
 }
 
-#contact .effect{
+#contact .main_title{
   position: absolute;
-  top: -30%;
-  left: 46%;
-  background-image: url('../img/backimage/contact_signboard.png');
+  top: -40%;
+  left: 41%;
+  background-image: url('../img/title/contact_signboard.png');
   background-size: cover;
   padding: 5%;
 }
+
 
 #contact>div p{
   text-align: center;
@@ -734,8 +735,8 @@ h3{
 
 #light{
   position: absolute;
-  top: 15%; /* 光源の開始位置を調整 */
-  right: 79%; /* 光源の開始位置を調整 */
+  top: 26%; /* 光源の開始位置を調整 */
+  right: 84%; /* 光源の開始位置を調整 */
   background-color: rgba(246, 255, 198, 0.973); /* 光の色と透明度を調整 */
   border-radius: 50%; /* 光を円形に */
   width: 0;
