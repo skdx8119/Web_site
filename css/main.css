@@ -36,6 +36,7 @@ img, video, object {
   text-align: center;
   height: 800px;
   background-image: url('../img/header/header.jpg');
+  background-position: 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -129,7 +130,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
   height: 100%;
 }
 
@@ -217,18 +217,13 @@ section {
   width: 100%;
 }
 
-#profile h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 20px;
-  padding-left: 19px;
-  padding-bottom: 41px;
-}
 
 #profile p {
-  text-align: left;
-  font-weight: 600;
-  line-height: 300%;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 2%;
+  line-height: 1.6;
+  margin-bottom: 20vh;
+  width: 100%;
 }
 
 #profile .sub_title {
@@ -239,41 +234,41 @@ section {
   border-radius: 20%;
 }
 #profile .fade-in-section{
-  margin-top: 48px;
-  margin-bottom: 26px;
+  margin-top: 4%;
+    margin-bottom: 1%;
 }
 
 .profile_img {
+  text-align: center;
+  font-size: 2vw;
   background-image: url('../img/title/prof_fish.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 18%;
-  padding: 74px;
+  background-size: 20vw;
+  padding: 7vw;
   position: relative;
 }
 
 .speech-bubble {
-  position: absolute;
+position: absolute;
   top: 2%;
-  left: 28%;
-  background: url('../img/backimage/speach_bubble.png');
+  left: 20%;
+  background: url(../img/backimage/speach_bubble.png);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 10px;
   display: inline-block;
   width: 20%;
   height: 60%;
 }
 
 .speech-bubble p {
-  margin: auto;
   padding-left: 10%;
 }
 
 .speech-bubble a {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 10%;
+  height: 10%;
 }
 
 .speech-bubble a img {
@@ -295,6 +290,10 @@ rt {
   opacity: 1 !important;
 }
 
+.sub_main_title span {
+  font-size: 17px;
+}
+
 .fish {
   background-image: url('../img/backimage/bule_fish.png');
   background-repeat: no-repeat;
@@ -302,7 +301,6 @@ rt {
   width: 30%;
   height: 30%;
   position: absolute;
-  right: 0;
   animation: swim 5s linear forwards;
 }
 
@@ -355,22 +353,20 @@ rt {
 /* 作品紹介 */
 #works{
   width: 100%;
-  padding:20% 0 0;
   margin-bottom: 20%;
 }
 
 #works .section_title{
   text-align: center;
-  background-image: url('../img/title/work_crab.png');
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: 267px;
-  padding: 86px;
+  background-image: url(../img/title/work_crab.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20vh;
+  padding: 10vh;
 }
 
 #works .section_title h2{
-  margin-bottom: -36px;
-  padding-left: 2px;
+  margin-bottom: -2vh;
 }
 
 #App, #Site {    
@@ -435,20 +431,20 @@ h3{
 .app_title span{
   display: block;
   margin-top: 3%; 
-  font-size: 1vw;
+  font-size: 16px;
   font-weight: normal;
   letter-spacing: normal;
 }
 /*制作期間・ツール*/
 .period, .tools{
   margin-top: 12%;
-  margin-left: 30px;
-  font-size: 1.2vw;
+  margin-left: 1vh;
+  font-size: 17px;
   line-height: 2.5;
   letter-spacing: 0.1em;
 }
 .sub_title{
-  font-size: 1.4vw;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
 }
@@ -464,7 +460,7 @@ h3{
 /*説明文*/
 .detail_text{
   margin-top: 12%;
-  font-size: 1vw;
+  font-size: 17px;
   letter-spacing: normal;
   line-height: 3;
 }
@@ -488,18 +484,45 @@ h3{
   letter-spacing: 0.2em;
   line-height: 4;
   text-align: center;
-  display:block;
+  display: block;
   width: 19vw;
+  height: 5vw;
   margin-top: 10%;
-  background:linear-gradient(to right, #add8e6 30%, #00008b);
-  box-shadow:2px 2px 5px  rgba(124,124,124,0.5);
+  background: linear-gradient(to right, #add8e6 30%, #00008b);
+  box-shadow: 2px 2px 5px rgba(124,124,124,0.5);
   transition: color 0.6s ease, background 1s ease-in-out;
+  position: relative;
+  z-index: 0;
 }
 
-.btn:hover{
-  color:#37415a;
-  background:linear-gradient(to left, #00008b, #add8e6 30%);
+.btn span {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  transition: 0.6s;
+}
+
+.btn::before {
+  transition: 0.6s;
+  position: absolute;
+  opacity: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to left, #00008b, #add8e6 30%);
+  z-index: 1;
+}
+
+
+.btn:hover::before{
   opacity: 0.9;
+}
+.btn:hover span{
+  color:#37415a;
 }
 
 
@@ -531,9 +554,6 @@ h3{
   background-repeat: no-repeat, no-repeat;
   background-size: 50% 100%, 50% 100%;
   position: relative;
-  margin: 0 -5%;
-  padding: 0;
-  width: 106%;
 }
 
 #skills .section_title{
@@ -611,7 +631,6 @@ h3{
 .skills_wrapper p{
   padding-left: 10%;
   box-sizing: border-box;
-  font-size: 1.1vw;
   line-height: 2.5;
   font-family: 'Comic Sans MS', cursive, sans-serif;
 }
@@ -626,7 +645,7 @@ h3{
 .skills_wrapper li p {
   background-color: transparent;
   transition: background-color 2s ease-in-out;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   background-color: #666;
   border-radius: 70px;
@@ -665,11 +684,11 @@ h3{
   position: relative;
 }
 
-#contact .main_title{
+#contact .effect{
   position: absolute;
   top: -30%;
   left: 46%;
-  background-image: url('../img/title/contact_signboard.png');
+  background-image: url('../img/backimage/contact_signboard.png');
   background-size: cover;
   padding: 5%;
 }

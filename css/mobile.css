@@ -99,30 +99,6 @@
     #wrapper .contents section:nth-child(even) p {
       right: 10%
     }
-  .speech-bubble {
-    position: absolute;
-    top: -10%;
-    left: -60%;
-    background: url(../img/backimage/speach_bubble.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 10px;
-    display: inline-block;
-    width: 77%;
-    height: 55%;
-}
-.profile_img {
-  background-size: 100%;
-  padding: 80px;
-  left: 30%;
-}
-#profile h2 {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  padding-bottom: 59px;
-}
 /* 作品紹介 */
 #works .section_title {
   background-size: 230px;

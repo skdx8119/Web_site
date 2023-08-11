@@ -102,30 +102,6 @@
   }
 
   /* プロフィール */
-  .profile_img {
-    background-size: 40%;
-}
-
-.speech-bubble {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url('../img/backimage/speach_bubble.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 10px;
-  display: inline-block;
-  width: 35%;
-  height: 55%;
-}
-  /* 作品紹介 */
-#App, #Site {
-  left: -10%;
-}
-#App .app_container:nth-of-type(2) {
-  display: flex;
-  flex-direction: row-reverse;
-}
 /* スキル */
 #skills {
   width: 115%;
