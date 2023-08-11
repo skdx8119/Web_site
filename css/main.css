@@ -2,7 +2,7 @@
 body, body::before {
   font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #000000;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.8px;
   word-break: break-all;
@@ -371,7 +371,7 @@ rt {
 
 #App, #Site {    
   background-image: url('../img/backimage/wave_left.png');
-  background-size: inherit;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   top: 0;
@@ -576,6 +576,7 @@ h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: unset;
 }
 
 
@@ -633,6 +634,8 @@ h3{
   box-sizing: border-box;
   line-height: 2.5;
   font-family: 'Comic Sans MS', cursive, sans-serif;
+  position: relative;
+  top: 6vh;
 }
 
 .skills_wrapper p span{
