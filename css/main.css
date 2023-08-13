@@ -1,6 +1,6 @@
 /* 全体設定とリセットスタイル */
 body, body::before {
-  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: 'Comic Sans MS', cursive, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #000;
   font-size: 16px;
   line-height: 1.8;
@@ -8,7 +8,6 @@ body, body::before {
   word-break: break-all;
   transition: background-color 1s ease;
   background-color: #a4d7f7;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
   height: auto;
   flex-direction: column;
   min-height: 100vh;
@@ -113,7 +112,7 @@ font-size: 16px;
 padding:  30px 20px 25px 28px;
 }
 #wrapper nav ul li a{
-color: #ffffff
+color: #fff
 }
 
 
@@ -206,7 +205,6 @@ section {
 
 /* プロフィール */
 #profile {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
   padding: 2vw;
   line-height: 1.6;
   width: 100%;
@@ -247,7 +245,6 @@ section {
   background-size: contain;
   display: inline-block;
   width: 20%;
-  height: 60%;
 }
 
 .speech-bubble p {
@@ -255,9 +252,8 @@ section {
 }
 
 .speech-bubble a, .speech-bubble a img {
-  display: inline-block;
-  width: 10%;
-  height: 10%;
+  display: inline;
+  width: 15%;
 }
 
 ruby {
@@ -755,13 +751,14 @@ h3{
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* 他の要素とのインタラクションを防ぐ */
-  z-index: 100; /* 他の要素より前面に表示 */
-  overflow: hidden; /* バブルが画面外に出ないようにする */
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
   background-color: transparent;
   transition: background-color 1s;
 }
 
+/* フッター */
 
 #footer {
   background-color: #87cefa;
