@@ -12,7 +12,7 @@
   }
   
 
-/* モバイルナビゲーション設定 */
+/* タブレットナビゲーション設定 */
 
   #wrapper nav {
     position: fixed;
@@ -102,25 +102,6 @@
   }
 
   /* プロフィール */
-
-#profile p, #profile .fade-in-section {
-  padding: 2%;
-  margin-bottom: 10vh;
-}
-
-.profile_img {
-  background-size: 25vw;
-}
-
-.speech-bubble {
-  top: 5%;
-  left: 7%;
-  width: 30%;
-}
-
-.speech-bubble p {
-  padding-left: 10%;
-}
 
 /* 作品紹介 */
 #works .section_title {
