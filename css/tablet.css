@@ -1,4 +1,3 @@
-/* Shrinking for mobile */
 @media screen and (max-width: 820px) and (min-width: 415px)  {
   .waves {
       height: 40px;
@@ -101,34 +100,4 @@
     right: 10%
   }
 
-  /* プロフィール */
-
-/* 作品紹介 */
-#works .section_title {
-  background-size: 50vw;
-  padding: 11vh;
-}
-.app_container {
-  flex-direction: column; /* 縦並びにする */
-}
-
-#app1, #app2, #site1, .app_detail {
-  width: 100%; /* 横幅一杯にする */
-}
-
-/* スキル紹介 */
-.skills_wrapper p {
-  top: 21vh;
-}
-
-/* お問い合わせ */
-#contact{
-  margin-top: 30vh;
-}
-
-#contact .main_title {
-  top: -70%;
-  left: 22%;
-  padding: 10%;
-}
 }

@@ -99,26 +99,6 @@
     #wrapper .contents section:nth-child(even) p {
       right: 10%
     }
-/* プロフィール */
-
-#profile p, #profile .fade-in-section {
-  padding: 2%;
-  margin-bottom: 10vh;
-}
-
-.profile_img {
-  background-size: 25vw;
-}
-
-.speech-bubble {
-  top: -6%;
-  left: 2%;
-  width: 35%;
-}
-
-.speech-bubble p {
-  padding-left: 10%;
-}
 
 /* 作品紹介 */
 #works .section_title {

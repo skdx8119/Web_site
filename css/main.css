@@ -183,7 +183,7 @@ section {
 .main_title{
   transform: translate(0,0)!important;
     opacity: 1!important;
-    font-size: 30px;
+    font-size: 4vw;
 }
 
 .background {
@@ -211,7 +211,7 @@ section {
   padding-top: 10vh;
 }
 
-#profile p, #profile .fade-in-section {
+#profile .fade-in-section {
   padding: 2%;
   margin-bottom: 10vh;
 }
@@ -232,22 +232,35 @@ section {
   text-align: center;
   background: url('../img/title/prof_fish.png') center no-repeat;
   background-size: 40vw;
-  padding: 7vw;
+  padding: 9vw;
   position: relative;
 }
 
 .speech-bubble {
+  /* 既存のプロパティを保持 */
   position: absolute;
-  top: 2%;
-  left: 20%;
+  top: 3vw;
+  left: 10vw;
   background: url('../img/backimage/speach_bubble.png') no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 20%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  height: auto;  /* 必要に応じて高さを調整 */
 }
 
-.speech-bubble p {
-  padding-left: 10%;
+.bubble_in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.speech-bubble p.name {
+  margin: 0;
+  text-align: center;
 }
 
 .speech-bubble a, .speech-bubble a img {
@@ -313,7 +326,7 @@ rt {
 /* 作品紹介 */
 #works{
   width: 100%;
-  margin-bottom: 20%;
+  margin: 40vw;
 }
 
 #works .section_title{
@@ -321,12 +334,13 @@ rt {
   background-image: url(../img/title/work_crab.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 20vh;
-  padding: 10vh;
+  background-size: 40vw;
+  padding: 30vh;
 }
 
 #works .section_title h2{
-  margin-bottom: -2vh;
+  margin-bottom: -2vw;
+  white-space: nowrap;
 }
 
 #App, #Site {    
@@ -338,6 +352,10 @@ rt {
   margin-bottom: 0;
   padding-left: 5%;
   width: 100%;
+}
+
+.app_container {
+  margin-bottom: 20vw;
 }
 
 #App .app_container {
@@ -521,8 +539,8 @@ h3{
 #skills .section_title {
   text-align: center;
   background: url('../img/title/skill_submarine.png') center no-repeat;
-  background-size: 20vh;
-  padding: 8vw;
+  background-size: 40vw;
+  padding: 13vw;
 }
 
 #skills h2 {
@@ -530,7 +548,6 @@ h3{
 }
 
 .skills_wrapper {
-  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   padding: unset;
@@ -566,12 +583,8 @@ h3{
 .skills_icon {
   width: 10vh;
   background-color: #fff;
-  border-radius: 40px;
+  border-radius: 4vw;
   margin: 6vw;
-}
-
-.skills_wrapper li:nth-child(even) .skills_icon img {
-  margin-left: auto;
 }
 
 .skills_wrapper p {
@@ -594,8 +607,9 @@ h3{
   font-size: 14px;
   color: #fff;
   background-color: #666;
-  border-radius: 70px;
+  border-radius: 7vw;
   transition: background-color 2s ease-in-out;
+  padding: 3vw;
 }
 
 .skills_wrapper li .skill_content {
@@ -621,7 +635,7 @@ h3{
 /*お問い合わせ*/
 #contact{
   width: 100%;
-  margin-top: 21vh;
+  margin-top: 40vw;
   background: url("../img/backimage/seabed.png") no-repeat;
   background-size: cover;
   position: relative;
@@ -629,10 +643,10 @@ h3{
 
 #contact .main_title{
   position: absolute;
-  top: -40%;
-  left: 41%;
-  background: url('../img/title/contact_signboard.png') center/cover no-repeat;
-  padding: 5%;
+  top: -80%;
+  left: 30%;
+  background: url('../img/title/contact_signboard.png') center/40vw no-repeat;
+  padding: 10vw;
 }
 
 
