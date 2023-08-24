@@ -38,6 +38,7 @@ img, video, object {
   background-position: 30%;
   background-repeat: no-repeat;
   background-size: cover;
+  top: 115px;
 }
 
 
@@ -339,7 +340,6 @@ rt {
 }
 
 #works .section_title h2{
-  margin-bottom: -2vw;
   white-space: nowrap;
 }
 
@@ -568,7 +568,7 @@ h3{
   background-size: cover;
   text-align: left;
   align-self: flex-start;
-  margin-right: 60%;
+  margin-right: 40%;
 }
 
 .skills_wrapper li:nth-child(even) {
@@ -577,14 +577,16 @@ h3{
   background: url('../img/backimage/eel_right.png') left no-repeat;
   background-size: cover;
   align-self: flex-end;
-  margin-left: 60%;
+  margin-left: 40%;
 }
 
 .skills_icon {
   width: 10vh;
   background-color: #fff;
   border-radius: 4vw;
-  margin: 6vw;
+  margin: 12vw;
+  position: relative;
+  top: 17vw;
 }
 
 .skills_wrapper p {
@@ -610,6 +612,7 @@ h3{
   border-radius: 7vw;
   transition: background-color 2s ease-in-out;
   padding: 3vw;
+  margin-top: 3vw;
 }
 
 .skills_wrapper li .skill_content {
@@ -635,7 +638,7 @@ h3{
 /*お問い合わせ*/
 #contact{
   width: 100%;
-  margin-top: 40vw;
+  margin-top: 100vw;
   background: url("../img/backimage/seabed.png") no-repeat;
   background-size: cover;
   position: relative;
@@ -689,8 +692,8 @@ h3{
 
 #light{
   position: absolute;
-  top: 25%; /* 光源の開始位置を調整 */
-  right: 63%; /* 光源の開始位置を調整 */
+  top: 3vw; /* 光源の開始位置を調整 */
+  right: 19vw; /* 光源の開始位置を調整 */
   background-color: rgba(246, 255, 198, 0.973); /* 光の色と透明度を調整 */
   border-radius: 50%; /* 光を円形に */
   width: 0;

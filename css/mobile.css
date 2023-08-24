@@ -100,13 +100,138 @@
       right: 10%
     }
 
-/* 作品紹介 */
+
+    .waves {
+      height: 40px;
+      min-height: 40px;
+  }
+  .content {
+      height: 30vh;
+  }
+  h1 {
+      font-size: 24px;
+  }
+  
+
+/* タブレットナビゲーション設定 */
+
+  #wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background:#88d0e6;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2
+  }
+  #wrapper nav ul li {
+    display:block;
+    padding: 20px 28px
+  }
+  
+  #wrapper nav ul li a {
+    text-decoration: none;
+    color: #ffffff
+  }
+  
+  #wrapper .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+  }
+  
+  #wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #666;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+  }
+  
+  #wrapper .btn-gnavi span:nth-child(1) {
+    top: 0
+  }
+  
+  #wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px
+  }
+  
+  #wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px
+  }
+  
+  #wrapper .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+  }
+  
+  #wrapper .btn-gnavi.open span {
+    background: #fff
+  }
+  
+  #wrapper .btn-gnavi.open span {
+    width: 24px;
+  }
+  #wrapper .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 6px #666
+  }
+  
+  #wrapper .contents section:nth-child(odd) p {
+    left: 10%
+  }
+  
+  #wrapper .contents section:nth-child(even) p {
+    right: 10%
+  }
+  #header {
+    top: 0;
+  }
+  #header .logo-title, #header .logo-desc {
+    letter-spacing: 2px;
+}
+
+  /* プロフィール */
+  .speech-bubble {
+    top: -6vw;
+    left: -2vw;
+    width: 38vw;
+    height: 15vw;
+}
+@media screen and (max-width: 500px) and (min-width: 415px)  {
+  .speech-bubble {
+    top: -4vw;
+    left: -1vw;
+    width: 34vw;
+    height: 13vw;
+}
+}
+
+  /* 作品紹介 */
 #works .section_title {
   background-size: 50vw;
   padding: 11vh;
 }
 .app_container {
   flex-direction: column; /* 縦並びにする */
+  margin-bottom: 40vw;
 }
 
 #app1, #app2, #site1, .app_detail {
@@ -114,18 +239,13 @@
 }
 
 /* スキル紹介 */
+.skills_wrapper li:nth-child(odd) {
+  margin-right: 20%;
+}
+.skills_wrapper li:nth-child(even) {
+  margin-left: 20%;
+}
 .skills_wrapper p {
-  top: 30vh;
-}
-
-/* お問い合わせ */
-#contact{
-  margin-top: 45vh;
-}
-
-#contact .main_title {
-  top: -70%;
-  left: 22%;
-  padding: 10%;
+  top: 12vh;
 }
 }
